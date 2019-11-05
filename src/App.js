@@ -7,12 +7,11 @@ class Chats extends Component {
     return (
       <React.Fragment>
         {this.props.chatList.map((chat, i) => {
-          {
-            /* if (i === 4) {
+          if (i === 4) {
             // Simulate an error
-            throw new Error("I crashed!");
-          } */
+            throw new Error('I crashed!')
           }
+
           return (
             <li key={i} className='chat-bubble'>
               {chat}
